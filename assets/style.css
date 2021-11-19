@@ -1,0 +1,78 @@
+:root{
+    --darkblue: #16568a;
+    --grey: rgb(184, 182, 182);
+    --lightred: #ff6961;
+    --lightgreen: #77dd77;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    background-color: white;
+}
+
+textarea{
+    background: transparent;
+    border: none;
+    resize: none;
+    color: black;
+    border-left: 1px solid black;
+    padding: 10px;
+}
+
+.jumbotron{
+    font-family: 'Anton', sans-serif;
+    background: var(--darkblue);
+    color: white;
+    border-bottom: 10px solid var(--grey);
+}
+
+.description{
+    white-space: pre-wrap;
+}
+
+.time-block{
+    text-align: left;
+    border-radius: 15px;
+}
+
+.row {
+    white-space: pre-wrap;
+    border-top: 1px solid;
+    height: 80px;
+}
+
+.hour {
+    font-family: 'Anton', sans-serif;
+    background-color: white;
+    color: black;
+    border-top: 1px dashed black;
+}
+
+.past {
+    background-color: var(--grey);
+    color: white;
+}
+
+.present {
+    background-color: var(--lightred);
+    color: white;
+}
+
+.future {
+    background-color: var(--lightgreen);
+    color: white;
+}
+
+.saveBtn {
+    border-left: 1px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: var(--darkblue);
+    color: white;
+}
+
+.saveBtn i:hover {
+    transition: all .3s ease-in-out;
+}

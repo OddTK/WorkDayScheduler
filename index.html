@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css" />
 
     <title>Work Day Scheduler</title>
@@ -12,18 +17,97 @@
 
 <body>
 
-    <header class="container">
-        <div class="col-12 p-5">
+    <header class="jumbotron">
+        <div class="col-12">
             <h1 class="text-center">Work Day Scheduler</h1>
             <h5 class="text-center">A simple calendar app for scheduling your work day</h5 class="text-center">
-            <h5 class="text-center" id="date"></h5>
+                <br>
+            <h5 class="text-center" id="currentDay"></h5>
+            <br>
         </div>
     </header>
+
+    <div class="container">
+
+        <div id="hour9" class="row time-block">
+            <div class="col-md-1 hour">
+                9:00AM
+            </div>
+            <textarea class="col-md-10 description"></textarea>
+            <button class="btn saveBtn col-md-1"><i class="far fa-save"></i></button>
+        </div>
+
+        <div id="hour10" class="row time-block">
+            <div class="col-md-1 hour">
+                10:00AM
+            </div>
+            <textarea class="col-md-10 description"></textarea>
+            <button class="btn saveBtn col-md-1"><i class="far fa-save"></i></button>
+        </div>
+
+        <div id="hour11" class="row time-block">
+            <div class="col-md-1 hour">
+                11:00AM
+            </div>
+            <textarea class="col-md-10 description"></textarea>
+            <button class="btn saveBtn col-md-1"><i class="far fa-save"></i></button>
+        </div>
+
+        <div id="hour12" class="row time-block">
+            <div class="col-md-1 hour">
+                12:00PM
+            </div>
+            <textarea class="col-md-10 description"></textarea>
+            <button class="btn saveBtn col-md-1"><i class="far fa-save"></i></button>
+        </div>
+
+        <div id="hour13" class="row time-block">
+            <div class="col-md-1 hour">
+                1:00PM
+            </div>
+            <textarea class="col-md-10 description"></textarea>
+            <button class="btn saveBtn col-md-1"><i class="far fa-save"></i></button>
+        </div>
+
+        <div id="hour14" class="row time-block">
+            <div class="col-md-1 hour">
+                2:00PM
+            </div>
+            <textarea class="col-md-10 description"></textarea>
+            <button class="btn saveBtn col-md-1"><i class="far fa-save"></i></button>
+        </div>
+
+        <div id="hour15" class="row time-block">
+            <div class="col-md-1 hour">
+                3:00PM
+            </div>
+            <textarea class="col-md-10 description"></textarea>
+            <button class="btn saveBtn col-md-1"><i class="far fa-save"></i></button>
+        </div>
+
+        <div id="hour16" class="row time-block">
+            <div class="col-md-1 hour">
+                4:00PM
+            </div>
+            <textarea class="col-md-10 description"></textarea>
+            <button class="btn saveBtn col-md-1"><i class="far fa-save"></i></button>
+        </div>
+
+        <div id="hour17" class="row time-block">
+            <div class="col-md-1 hour">
+                5:00PM
+            </div>
+            <textarea class="col-md-10 description"></textarea>
+            <button class="btn saveBtn col-md-1"><i class="far fa-save"></i></button>
+        </div>
+
+    </div>
 
 
 </body>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="./assets/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 
 </html>
